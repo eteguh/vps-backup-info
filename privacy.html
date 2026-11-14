@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy policy | VPS Backup Automation</title>
+<style>
+:root{color-scheme:light;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#172b3a;background:#f4f7f8}body{margin:0;line-height:1.65}main{max-width:780px;margin:auto;padding:48px 24px 64px}nav{display:flex;gap:24px;border-bottom:1px solid #d6e0e5;padding-bottom:16px;font-size:.95rem}a{color:#075e74;text-underline-offset:3px}h1{font-size:clamp(2rem,5vw,2.8rem);line-height:1.15;margin:36px 0 20px;letter-spacing:-.035em}h2{font-size:1.25rem;margin:30px 0 8px}p{margin:12px 0}.intro{font-size:1.13rem;color:#3b5263}.note{padding:16px 20px;border-left:4px solid #197b86;background:#e7f1f3}footer{margin-top:40px;padding-top:16px;border-top:1px solid #d6e0e5;color:#526574;font-size:.9rem}li{margin:6px 0}code{font-size:.9em;overflow-wrap:anywhere}@media(max-width:480px){main{padding:24px 18px 40px}}
+</style>
+</head>
+<body>
+<main>
+<nav aria-label="Main navigation"><a href="./">VPS Backup Automation</a><a href="privacy.html">Privacy policy</a></nav>
+<h1>Privacy policy</h1>
+<p class="intro">VPS Backup Automation is a personal-use utility operated by <a href="https://github.com/eteguh">eteguh</a>. It is not offered as a public backup service.</p>
+<p>Last updated: November 14, 2026.</p>
+<h2>Information accessed and purpose</h2>
+<p>The utility uses Google OAuth credentials to access an owner-authorized Google Drive account. With the intended <code>drive.file</code> permission, it accesses app-associated or explicitly authorized files and relevant file, repository and storage-quota metadata. It reads and writes encrypted backup objects for backup creation, integrity checking, recovery and approved retention. It does not intentionally inspect unrelated Drive content.</p>
+<h2>Storage and security</h2>
+<p>Selected backup payloads are encrypted with restic before they are uploaded to Google Drive. Local working copies are used during capture and restoration and are protected by the owner's access controls. Successful temporary copies may be removed after verified completion; failed or unresolved copies may be retained for review.</p>
+<p>OAuth credentials and encryption passwords are held in owner-controlled protected credential storage and independent recovery records. They are not embedded in this website or its public repository. Secret-storage providers used by the owner may process credentials to provide those services. Google processes requests and stores encrypted backup objects under its own service terms and privacy policy.</p>
+<h2>Use and sharing</h2>
+<p>Google user data is used only to provide the described personal backup and recovery functions. It is not sold, used for advertising, or used to train general-purpose AI models. The utility does not intentionally publish backup contents or share them with other users. Owner-authorized infrastructure providers process information needed to host, store and operate the utility.</p>
+<p>Use of information received from Google APIs must comply with the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including applicable Limited Use requirements.</p>
+<h2>Retention, deletion and revocation</h2>
+<p>Backup objects are retained according to the owner's configured retention and protection settings. Approved retention may remove expired objects; Google Drive trash and retained historical material may continue to hold data. Revoking OAuth access does not itself delete existing backups or local recovery copies.</p>
+<p>The owner can revoke the app's access in the Google Account third-party connections settings and manage stored backups separately. Requests for deletion or recovery should be made privately to the owner, who must consider protected or unresolved recovery material before taking action.</p>
+<h2>This website</h2>
+<p>These informational pages contain no scripts, forms, embedded third-party content or site-added analytics. They do not access Google Drive, accept credentials or process backups. GitHub Pages hosts the website; GitHub may collect technical request information under its <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">privacy statement</a>.</p>
+<h2>Contact and changes</h2>
+<p>The project owner is <a href="https://github.com/eteguh">eteguh on GitHub</a>. Existing authorized users should use their established private contact channel. Do not send passwords, tokens, private identifiers or backup contents in public posts.</p>
+<p>This policy will be updated if the utility's data practices change. Any materially different Google data access requires the appropriate disclosure and authorization before use.</p>
+<footer>Personal-use project operated by <a href="https://github.com/eteguh">eteguh</a>. Not affiliated with or endorsed by Google.</footer>
+</main>
+</body>
+</html>
